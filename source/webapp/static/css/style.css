@@ -7,7 +7,6 @@ body{
     background-color: cadetblue;
     margin-top: 60px;
     overflow-wrap: break-word;
-    height: 100%;
 }
 
 .container {
@@ -129,8 +128,6 @@ body{
     flex-grow: 1;
 }
 .footer{
-    position: fixed;
     background-color: darkcyan;
-    flex: 0 0 auto;;
 }
 

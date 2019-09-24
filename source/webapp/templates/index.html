@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block menu %}
+    <li><a href="{% url 'product_add' %}">Add Product</a></li>
     <li class="ml-auto">
         <form class="form-inline my-2 my-lg-0"  action="{% url "search_by_name" %}">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
@@ -22,8 +23,8 @@
                     <p>{{ product.category }}</p>
                     <p>{{ product.price }}</p>
                     <div>
-                        <a href="" class="btn btn-dark">Edit</a>
-                        <a href="" class="btn btn-dark">Delete</a>
+                        <a href="{% url "product_update" product.pk %}" class="btn btn-dark">Edit</a>
+                        <a href="{% url 'product_delete' product.pk %}" class="btn btn-dark">Delete</a>
                     </div>
                 </div>
             </div>

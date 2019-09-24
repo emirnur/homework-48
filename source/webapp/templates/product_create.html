@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Create Products{% endblock %}
+{% block content %}
+    <h1>Create information about Product</h1>
+    <form method="POST" action="{% url "product_add" %}">
+        {% include 'partial/product_form.html' with button_text='Добавить' %}
+    </form>
+{% endblock %}

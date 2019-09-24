@@ -1,14 +1,13 @@
 from django.db import models
 
-
 PRODUCT_OTHER_CHOICE = 'other'
-PRODUCT_CATEGORY_CHOICES = (
+PRODUCT_CATEGORY_CHOICES = [
     (PRODUCT_OTHER_CHOICE, 'Другое'),
     ('food', 'Еда'),
     ('drink', 'Вода'),
     ('cloth', 'Одежда'),
     ('electronics', 'Электроника')
-)
+]
 
 
 class Product(models.Model):
@@ -20,4 +19,4 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=7, decimal_places=2, verbose_name='Цена')
 
     def __str__(self):
-        return self.name
+        return str(self.name)
