@@ -120,13 +120,7 @@ body{
 .btn-danger:hover {
     box-shadow: rgba(255, 0, 0, 0.8) 0 0 5px;
 }
-.card-body{
-    display: flex;
-    flex-direction: column;
-}
-.card-body .host-text{
-    flex-grow: 1;
-}
+
 .footer{
     background-color: darkcyan;
 }
